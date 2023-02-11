@@ -1,4 +1,6 @@
 # TASTY
 Cookin Recipe Site
-## language
+## Language
 Html, CSS, JavaScript, php, MariaDB
+## Server
+fileZilla, cafe24
