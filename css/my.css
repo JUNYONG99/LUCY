@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+
+/*layout*/
+body {font-family: 'NanumSquare', sans-serif !important; font-size: 14px; color:#4e4e4e; line-height: 1.4;}
+.wrap {width: 100%; min-width: 1100px; overflow: hidden;}
+
+/*top*/
+header .wrapper {margin: 0 auto; margin-right: 45px;}
+header .top {position: relative; left: 0; padding: 0;	width: 100%; height: 0px; padding-top: 0px;margin-left: 75px;}
+header .top p {font-size: 15px; line-height: 25px;}
+header .top p:hover {color:#F8733F;}
+header .top-menu {display: inline;}
+header .top-menu li {display: inline-block;}
+header .top-menu .test {float:right; padding-right: 20px;}
+header .top-menu .test a p {float: right;}
+header .top-menu .test .test:hover p {color:#F8733F;}
+
+/*header*/
+header {width: 100%; height: 120px; line-height: 120px; padding: 0 60px; box-sizing: border-box; position: fixed; top:0; z-index: 100; background-color: #fff; border-bottom: solid 1px #bbbbbb; back }
+header.on {background: #fff;}
+header .logo {display: block; font-size: 42px; font-weight: 900;letter-spacing: -6px; color: #F8733F; margin-left:-18px; float: left; }
+header nav {float: right;}
+header nav .gnb li a:hover {color:#F8733F;}
+header nav .gnb li {display: inline-block; margin-left: 60px;}
+header nav .gnb li a {display: block; font-size: 18px; text-transform: uppercase; position: relative;}
+header nav .gnb li a:after {content: ''; width: 0%;height: 1px; position: absolute;background: #F8733F; bottom: 47px; left: 50%; transform: translateX(-50%);transition: all 0.5s;}
+header nav .gnb li a:hover:after, header nav .gnb li a:focus:after {width: 100%;}
+
+/*버튼클릭시 페이지 이동*/
+html {scroll-behavior: smooth;}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/*body*/
+body .box{margin: auto; height: 150px;width: 150px;margin-top: 200px;}
+.profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+body .hong{text-align: center;font-size: 45px;margin-top: 25px;}
+body .email{text-align: center;font-size: 17px;}
+
+#btn1 {
+    width: 300px;
+    height: 70px;
+    font-size:25px;
+    font-family: 'sans-serif';
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    background: #F8733F;
+    border: solid 2px #F8733F;
+    border-radius: 12px;
+    margin:auto;
+    margin-top: 20px;
+    display:block;
+  }
+
+#btn2 {
+    width: 300px;
+    height: 70px;
+    font-size:25px;
+    font-family: 'sans-serif';
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    background: #F8733F;
+    border: solid 2px #F8733F;
+    border-radius: 12px;
+    margin:auto;
+    margin-top: 20px;
+    display:block;
+  }
+
+  #btn3 {
+    width: 300px;
+    height: 70px;
+    font-size:25px;
+    font-family: 'sans-serif';
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    background: #F8733F;
+    border: solid 2px #F8733F;
+    border-radius: 12px;
+    margin:auto;
+    margin-top: 20px;
+    display:block;
+  }
+  #btn4 {
+    width: 300px;
+    height: 70px;
+    font-size:25px;
+    font-family: 'sans-serif';
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    background: #F8733F;
+    border: solid 2px #F8733F;
+    border-radius: 12px;
+    margin:auto;
+    margin-top: 20px;
+    display:block;
+  }
+/*body.btn2   {width : 180px;height: 50px;font-size: 30px;color: white;line-height:
+     50px;text-align: center;background: #F8733F;border: solid 2px grey;border-radius: 12px;}*/
+
+
+
+
+footer {padding: 80px 0 0; text-align: center; border-top: solid 0.5px #bbbbbb; }
+footer .sns li {display: inline-block; margin-right: 30px;}
+footer ul li{font-size: 10px; line-height: 1.4;}
+footer ul li .copyright {font-size: 10px; font-weight: 100; color:#888; display: block; margin-top:20px; padding-bottom: 20px; }
+
+
+header .open {display: none;}
+header .close {display: none;}
+
+
+/*모바일 네비 추가*/
+header .open {display: none;}
+header .close {display: none;}
+
+/*모바일용 줄바꿈*/
+br.mo {display: none;}
+
+/*반응형 시작*/
+/*테블릿모드 : 1100px이하~ 951px*/
+@media screen and (max-width:1100px){
+    .wrap {min-width: 100%;}
+    
+	
+	
+    /*header*/
+    header {height: 60px; line-height: 60px;padding:0 10px;}
+    header .open {display: block; float: right;font-size: 32px; height: 60px; padding-top: 5px; box-sizing: border-box;}
+    header .bg {width: 100%; height: 100vh; background: rgba(0,0,0,0.6); display: block; position: absolute; top:0; left: 0; z-index: 200; display: none;}
+    header .logo {width:5.8%; margin: auto;}
+    header nav{background: #fff; width: 0; height: 100vh; position: absolute; right: 0; top:0; overflow: hidden; transition: width 0.3s; z-index:300; }
+    header nav.on {width: 70%; max-width: 300px; }
+    header nav .close {display: block; position: absolute; right: 10px; top:0; font-size: 35px; padding-top: 5px; box-sizing: border-box;}
+    header nav .gnb {margin-top: 100px;}
+    header nav .gnb li {display: block; width: 100%; margin:0; line-height: 60px;}
+    header nav .gnb li a {width: 100%; padding-left: 30px; box-sizing: border-box;font-size:20px; }
+    header nav .gnb li a:after {display: none;}
+    
+    
+    	/*top*/
+	header .top {display: none;}
+}
+
+
+/*950px 이하 - 751px 테블릿 참고*/
+@media screen and (max-width:950px){
+    
+    /*footer*/
+    footer {margin-top: 50px; border-top: solid 1px #bbbbbb;}
+    footer .sns li:last-child {margin-right: 0;}
+    footer .footerLogo {font-size: 28px; letter-spacing: -4px;}
+    footer ul li {font-size:13px; }
+    footer ul li .copyright {font-size: 13px; margin-top: 10px;} 
+    footer .box {padding: 80px 0;}
+    footer .box.motion h2{font-size: 17px;}  
+	
+	/*top*/
+	header .top {display: none;}
+    
+    
+}
+
+
+
+/* 750px 이하 - 모바일 디바이스 체크 */  
+@media screen and (max-width:750px){
+    
+    /*top*/
+	header .top {display: none;}
+}
+
+/* 320px 이하  - 280px  체크 - 개발자도구에서 갤럭시 폴드 기종 추가 */ 
+@media screen and (max-width:320px){
+    
+     /*footer*/
+        footer {margin-top: 50px; border-top: solid 1px #bbbbbb;}
+
+    footer ul li {font-size: 10px;}
+    footer .box  {padding: 50px 0;}
+    footer .box.motion h2 {font-size: 14px;}  
+	
+	/*top*/
+	header .top {display: none;}
+}
