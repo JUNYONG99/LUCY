@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 *.js linguist-vendored
+=======
+*.css linguist-detectable=false
+>>>>>>> 556c8059cb5e1bbc81cb8c908718b72bde906969
